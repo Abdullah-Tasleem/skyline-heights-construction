@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Header } from "../../frontend/common/header";
+import { Header } from "../../frontend/common/Header";
 import { Sidebar } from "../../frontend/common/Sidebar";
 import { Footer } from "../../frontend/common/Footer";
 import { Link, useNavigate } from "react-router-dom";

@@ -1,5 +1,5 @@
 import React from "react";
-import { Header } from "../frontend/common/header";
+import { Header } from "../frontend/common/Header";
 import { Footer } from "../frontend/common/Footer";
 import { Sidebar } from "../frontend/common/Sidebar";
 

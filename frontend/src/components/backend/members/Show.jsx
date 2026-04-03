@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Header } from "../../frontend/common/header";
+import { Header } from "../../frontend/common/Header";
 import { Sidebar } from "../../frontend/common/Sidebar";
 import { Footer } from "../../frontend/common/Footer";
 import { apiUrl, token, fileUrl } from "../../frontend/common/http";
