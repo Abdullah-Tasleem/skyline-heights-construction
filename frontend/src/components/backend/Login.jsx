@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Header } from "../frontend/common/header";
+import { Header } from "../frontend/common/Header";
 import { Footer } from "../frontend/common/Footer";
 import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
