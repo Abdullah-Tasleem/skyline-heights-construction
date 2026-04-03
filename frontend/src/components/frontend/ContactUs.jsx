@@ -1,5 +1,5 @@
 import React, { use } from "react";
-import { Header } from "./common/header";
+import { Header } from "./common/Header";
 import { Footer } from "./common/Footer";
 import { Hero } from "./common/Hero";
 import { useForm } from "react-hook-form";

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Header } from "./common/header";
+import { Header } from "./common/Header";
 import { Footer } from "./common/Footer";
 import { apiUrl, fileUrl } from "./common/http";
 import { Hero } from "./common/Hero";

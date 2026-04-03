@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Header } from "./common/header";
+import { Header } from "./common/Header";
 import { Footer } from "./common/Footer";
 import { Hero } from "./common/Hero";
 import ConstructionImg from "../../assets/images/construction2.jpg";

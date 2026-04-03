@@ -1,5 +1,5 @@
 import React from "react";
-import { Header } from "./common/header";
+import { Header } from "./common/Header";
 import { Footer } from "./common/Footer";
 import { About as AboutNew } from "./common/About";
 import MemberImg from "../../assets/images/pexels-sindre-fs-1040880.jpg";
