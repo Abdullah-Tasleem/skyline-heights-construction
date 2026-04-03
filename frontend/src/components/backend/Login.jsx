@@ -18,7 +18,7 @@ export const Login = () => {
 
   const onSubmit = async (data) => {
     // console.log(data);
-    const res = await fetch("http://127.0.0.1:8000/api/authenticate", {
+    const res = await fetch("https://skyline-heights-construction-production.up.railway.app/api/authenticate", {
       method: "POST",
       headers: {
         "Content-type": "application/json",
