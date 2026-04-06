@@ -12,9 +12,7 @@ export const ShowTestimonial = () => {
 
   const fetchTestimonials = async () => {
     try {
-      const res = await fetch(apiUrl + "get-testimonials", {
-        method: "GET",
-      });
+      const res = await fetch(new URL("get-testimonials", apiUrl));
 
       const result = await res.json();
 
