@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import ServiceImg from "../../../assets/images/construction1.jpg";
-import { apiUrl, fileUrl } from "./http";
+import { buildApiUrl, buildFileUrl } from "./http";
 import { Link } from "react-router-dom";
 
 export const LatestServices = () => {
   const [services, setServices] = useState([]);
   const fetchLatestServices = async () => {
-    const res = await fetch(apiUrl + "get-latest-services?limit=4", {
+    const res = await fetch(buildApiUrl("get-latest-services?limit=4"), {
       method: "GET",
     });
     const result = await res.json();
@@ -34,7 +34,7 @@ export const LatestServices = () => {
                 <div className="col-md-3 col-lg-3" key={service.id || service.title}>
                   <div className="item">
                     <div className="service-img">
-                      <img src={`${fileUrl}uploads/services/small/${service.image}`} alt="" className="w-100" />
+                      <img src={`${buildFileUrl(`uploads/services/small/${service.image}`)}`} alt="" className="w-100" />
                     </div>
                     <div className="service-body">
                       <div className="service-title">

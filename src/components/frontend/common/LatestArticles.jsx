@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { apiUrl, fileUrl } from "./http";
+import { buildApiUrl, buildFileUrl } from "./http";
 import { Link } from "react-router-dom";
 
 export const LatestArticles = () => {
@@ -7,7 +7,7 @@ export const LatestArticles = () => {
 
   const fetchLatestArticles = async () => {
     try {
-      const res = await fetch(apiUrl + "get-latest-articles?limit=3", {
+      const res = await fetch(buildApiUrl("get-latest-articles?limit=3"), {
         method: "GET",
       });
 
@@ -40,7 +40,7 @@ export const LatestArticles = () => {
                 <div className="card shadow border-0 mb-3">
                   <div className="card-img-top">
                     <img
-                      src={`${fileUrl}uploads/articles/small/${article.image}`}
+                      src={`${buildFileUrl(`uploads/articles/small/${article.image}`)}`}
                       alt=""
                       className="w-100"
                     />

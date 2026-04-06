@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import AvatarImg from "../../../assets/images/author-2.jpg";
-import { apiUrl } from "./http";
+import { buildApiUrl, buildFileUrl } from "./http";
 import { Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -12,7 +12,7 @@ export const ShowTestimonial = () => {
 
   const fetchTestimonials = async () => {
     try {
-      const res = await fetch(new URL("get-testimonials", apiUrl));
+      const res = await fetch(buildApiUrl("get-testimonials"));
 
       const result = await res.json();
 
@@ -123,7 +123,7 @@ export const ShowTestimonial = () => {
                       <div className="d-flex meta">
                         <div>
                           <img
-                           src={`${fileUrl}uploads/testimonials/small/${testimonial.image}`}
+                           src={`${buildFileUrl(`uploads/testimonials/small/${testimonial.image}`)}`}
                             alt=""
                             width={50}
                           />
